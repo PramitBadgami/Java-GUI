@@ -16,14 +16,14 @@ public class ArrayListDemo
         students.add("Ram");
         students.add("Sita");
         
-        //System.out.print("Hello".substring(1,2));
+        // System.out.print("Hello".substring(1,2));
         
         // String greet = "Hello"; 
         // greet += "Professor"; 
         // greet.concat("Morning");
         // System.out.print(greet);
         
-        //System.out.print( "car".compareTo("cat"));
+        // System.out.print( "car".compareTo("cat"));
         // String tokyo = new String("tokyo");
         // String tokyoTwin = new String("tokyo");
         // System.out.println(tokyo != tokyoTwin);
