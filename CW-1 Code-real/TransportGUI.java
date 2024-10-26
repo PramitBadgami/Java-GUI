@@ -5,23 +5,23 @@
  * @author (22015724 Pramit Badgami)
  * @version (1.0.0)
  */
-//Importing all the classes and methods from javax.swing package
+// Importing all the classes and methods from javax.swing package
 import javax.swing.*;
-//Importing all the classes and methods from java.awt package
+// Importing all the classes and methods from java.awt package
 import java.awt.*;
-//Importing all the classes and methods from java.awt.event package
+// Importing all the classes and methods from java.awt.event package
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-//Importing all the classes and methods from java.util package
+// Importing all the classes and methods from java.util package
 import java.util.ArrayList;
 
-//Creating a class TransportGUI which implements ActionListener
+// Creating a class TransportGUI which implements ActionListener
 public class TransportGUI implements ActionListener
 {
-    //Declaring and initializing an arraylist array_list of type Vehicle Class
+    // Declaring and initializing an arraylist array_list of type Vehicle Class
     ArrayList<Vehicle> array_list = new ArrayList<Vehicle>();
     
-    //Declaring instance variables
+    // Declaring instance variables
     private JFrame auto_frame;
     
     private JPanel panel1;
@@ -114,45 +114,45 @@ public class TransportGUI implements ActionListener
     private JButton e_display;
     private JButton e_clear;
 
-    //Creating a main method
+    // Creating a main method
     public static void main(String[] args)
     {
-        //Initializing the local variable to the TransportGUI
+        // Initializing the local variable to the TransportGUI
         TransportGUI Auto = new TransportGUI();
-        //Calling auto_Gui() method
+        // Calling auto_Gui() method
         Auto.auto_Gui();
     }
     
-    //Creating an instance method auto_Gui
+    // Creating an instance method auto_Gui
     public void auto_Gui()
     {
-        //Initializing the instance variable along with a title
+        // Initializing the instance variable along with a title
         auto_frame = new JFrame("TransportGUI");
-        //Sets the x-axis to 301px, y-axis to 153px, width to 945px and height to 610px
+        // Sets the x-axis to 301px, y-axis to 153px, width to 945px and height to 610px
         auto_frame.setBounds(301,153,945,610);
-        //Sets the layout of the frame to null
+        // Sets the layout of the frame to null
         auto_frame.setLayout(null);
         
         
-        //Initializing the instance variable along with a title
+        // Initializing the instance variable along with a title
         auto_panel1 = new JPanel();
-        //Sets the visibility of the panel to true
+        // Sets the visibility of the panel to true
         auto_panel1.setVisible(true);
-        //Sets the x-axis to 50px, y-axis to 90px, width to 405px and height to 440px
+        // Sets the x-axis to 50px, y-axis to 90px, width to 405px and height to 440px
         auto_panel1.setBounds(50,90,405,440);
-        //Sets the Border to line border and gives black color to it
+        // Sets the Border to line border and gives black color to it
         auto_panel1.setBorder(BorderFactory.createLineBorder(Color.black));
-        //Sets the layout of the panel to null
+        // Sets the layout of the panel to null
         auto_panel1.setLayout(null);
         
         a_TransportGUI = new JLabel("Transport GUI");
         a_TransportGUI.setBounds(380,-10,200,100);
-        //Sets the font to Serif and text as bold and font size to 25
+        // Sets the font to Serif and text as bold and font size to 25
         a_TransportGUI.setFont(new Font("Serif", Font.BOLD, 25));
         
         a_Auto = new JLabel("Add an AutoRickshaw");
         a_Auto.setBounds(106,20,200,25);
-        //Sets the font to Serif and text as bold and font size to 20
+        // Sets the font to Serif and text as bold and font size to 20
         a_Auto.setFont(new Font("Serif", Font.BOLD, 20));
         
         a_vID = new JLabel("Vehicle ID:");
