@@ -5,7 +5,7 @@
  */
 public class ElectricScooter extends Vehicle 
 {
-    //Attributes of ElectricScooter class
+    // Attributes of ElectricScooter class
     private int range;
     private int batteryCapacity;
     private int price;
@@ -15,11 +15,11 @@ public class ElectricScooter extends Vehicle
     private boolean hasPurchased;
     private boolean hasSold;
     
-    //Constructor of Electricscooter class
+    // Constructor of Electricscooter class
     public ElectricScooter(int vehicleID,String vehicleName,String vehicleWeight, String vehicleSpeed, String vehicleColor,int batteryCapacity )
     {
         
-        //calling the constructor of Vehicle class
+        // calling the constructor of Vehicle class
         super(vehicleID,vehicleName,vehicleColor,vehicleWeight);
         this.range = 0;
         this.price = 0;
@@ -33,7 +33,7 @@ public class ElectricScooter extends Vehicle
         super.setvehicleColor(vehicleColor);//calling setvehicleColor method from Vehicle class 
     }
     
-    //creating getter method for each attributes
+    // creating getter method for each attributes
     public int getrange ()
     {
         return this.range;
@@ -74,7 +74,7 @@ public class ElectricScooter extends Vehicle
         return this.hasSold;
     }
     
-    //creating setter method to set the brand    
+    // creating setter method to set the brand    
     public void setBrand(String newBrand)
     {
         
@@ -86,7 +86,7 @@ public class ElectricScooter extends Vehicle
         }   
     }
     
-    //method used to purchase
+    // method used to purchase
     public void purchase(String newBrand,int newPrice,String newChargingTime, String newMileage, int newRange)
     {
         
@@ -103,7 +103,7 @@ public class ElectricScooter extends Vehicle
         }
     }
     
-    //method used to sell
+    // method used to sell
     public void sell(int newPrice)
     {
         
@@ -121,11 +121,11 @@ public class ElectricScooter extends Vehicle
         }
     }
        
-    //creating display method
+    // creating display method
     public void display()
     {
         
-        //calling display method from Vehicle class
+        // calling display method from Vehicle class
         super.display();
         if (this.hasPurchased == true){
             System.out.println("Brand:"+this.brand);
